@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">A1-Comp3275</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_uicomponents">UI Components</string>
+    <string name="title_activity_layouts">Layouts</string>
+    <string name="title_activity_dialogs">Dialogs</string>
+    <string name="title_activity_toastn_snackbar">Toasts and Snackbars</string>
+    <string name="title_activity_activity_bundles">Activity Bundles</string>
+    <string name="title_activity_activity_results">Activity for Results</string>
+    <string name="title_activity_custom_adapter">Custom Adapters</string>
+    <string name="title_activity_fragment">Fragments</string>
+    <string name="title_activity_action_bar_and_menu">ActionBar And Menu</string>
+    <string name="title_activity_master_detail_layout">Master Detail Layout</string>
+
+    <!--//Menu items that should test required functionality-->
+    <string-array name="menu_funcs">
+        <item>UI Components</item>
+        <item>Layouts</item>
+        <item>Dialogs</item>
+        <item>Toasts and Snackbar</item>
+        <item>Activity Bundle</item>
+        <item>Activity for Result</item>
+        <item>Custom Adapter</item>
+        <item>Fragment</item>
+        <item>Action Bar and Menus</item>
+        <item>Master/Detail Layout</item>
+    </string-array>
+
+    <!--Menu items that should implement toast and snackbar functionality-->
+    <string-array name="food_items">
+        <item>Toast Short</item>
+        <item>Toast Long</item>
+        <item>SnackBar</item>
+        <item>SnackBar Action</item>
+    </string-array>
+
+    <string-array name="dialog_items">
+        <item>Alert</item>
+        <item>Confirm</item>
+        <item>Date</item>
+        <item>List</item>
+        <item>Multiple Choice List</item>
+    </string-array>
+
+</resources>

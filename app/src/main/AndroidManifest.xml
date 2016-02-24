@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="king.bas.a1_comp3275">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UIComponents"
+            android:label="@string/title_activity_uicomponents"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Layouts"
+            android:label="@string/title_activity_layouts"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Dialogs"
+            android:label="@string/title_activity_dialogs"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ToastnSnackbar"
+            android:label="@string/title_activity_toastn_snackbar"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ActivityBundles"
+            android:label="@string/title_activity_activity_bundles"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ActivityResults"
+            android:label="@string/title_activity_activity_results"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".CustomAdapter"
+            android:label="@string/title_activity_custom_adapter"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Fragment"
+            android:label="@string/title_activity_fragment"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ActionBarAndMenu"
+            android:label="@string/title_activity_action_bar_and_menu"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+        <activity
+            android:name=".MasterDetailLayout"
+            android:label="@string/title_activity_master_detail_layout"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="king.bas.a1_comp3275.MainMenu" />
+        </activity>
+    </application>
+
+</manifest>
