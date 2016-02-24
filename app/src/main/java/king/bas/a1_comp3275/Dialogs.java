@@ -1,5 +1,6 @@
 package king.bas.a1_comp3275;
 
+import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
@@ -14,15 +15,16 @@ import android.util.Log;
 import android.view.View;
 import android.app.AlertDialog;
 import android.widget.AdapterView;
+import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Dialogs extends AppCompatActivity{
-    final CharSequence[] snacks = {"KitKat", "Lollipop","Marshmallow","Jelly Bean","Frozen Yogurt"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +80,9 @@ public class Dialogs extends AppCompatActivity{
                         alert.show();
                         break;
                     case 2:
-//                        Allows the user to select a date
+//                        Allows the user to select a date from a dialog pop up
+                        AlertDialog.Builder popDate = new AlertDialog.Builder(Dialogs.this);
+                        pickDate(popDate);
 
                         break;
                     case 3:
@@ -104,9 +108,12 @@ public class Dialogs extends AppCompatActivity{
         }); //clickListner
     }// onCreate
 
+    // Actual logic for the method that allows user to make single choice
     public void singleChoice(){
-        AlertDialog.Builder builder = new AlertDialog.Builder(Dialogs.this);
+        final CharSequence[] snacks = {"KitKat", "Lollipop","Marshmallow","Jelly Bean","Frozen Yogurt"};
+        AlertDialog.Builder builder = new AlertDialog.Builder(Dialogs.this); // creates the dialog pop up
         builder.setTitle("Snack")
+//                Radio buttons are used for single choices
                 .setSingleChoiceItems(snacks, 1, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialogInterface, int item) {
                         Toast.makeText(getApplicationContext(), snacks[item], Toast.LENGTH_SHORT).show();
@@ -121,6 +128,7 @@ public class Dialogs extends AppCompatActivity{
         final boolean [] selected = {false, false, false};
         AlertDialog.Builder builder = new AlertDialog.Builder(Dialogs.this);
         builder.setTitle("Pick colors")
+//        Check boxes are used for multiple choice options
                 .setMultiChoiceItems(items, selected, new DialogInterface.OnMultiChoiceClickListener() {
                     public void onClick(DialogInterface dialogInterface, int item, boolean b) {
                         Log.d("Myactivity", String.format("%s: %s", items[item], b));
@@ -128,7 +136,33 @@ public class Dialogs extends AppCompatActivity{
                 });
         builder.setPositiveButton("Ok", null);
         builder.create().show();
-    }
+    }// multiChoice
+
+    //DatePicker logic uses Sthe calendar object class
+    public void pickDate(AlertDialog.Builder buil){
+        Calendar cali = Calendar.getInstance();
+//        The following lines should auto select the current date
+        int year = cali.get(Calendar.YEAR);
+        int month = cali.get(Calendar.MONTH);
+        int day = cali.get(Calendar.DAY_OF_MONTH);
+
+//        Should pass values to pop up dialog
+        DatePickerDialog caliDialog = new DatePickerDialog(Dialogs.this,listener,year, month, day ); //Passes the year, month and day to the Listener event to be outputted to the user
+        caliDialog.show();
+    }// datePicker
 
 
-}
+    DatePickerDialog.OnDateSetListener listener = new DatePickerDialog.OnDateSetListener() {
+        @Override
+        public void onDateSet(DatePicker view, int year, int mon, int dated) {
+            // mon is offset by 1 to accommodate for value starting at 0,
+            // meaning realistic date
+            mon += 1;
+            // Should output selected date
+            Toast.makeText(Dialogs.this,dated + "/" + mon + "/" + year,Toast.LENGTH_SHORT).show();
+//            Toast.makeText(Dialogs.this,dayOfMonth + "/" + mon + "/" + year,Toast.LENGTH_SHORT).show();
+        } //onDateSet
+    }; // Listener
+
+
+} //Activity
