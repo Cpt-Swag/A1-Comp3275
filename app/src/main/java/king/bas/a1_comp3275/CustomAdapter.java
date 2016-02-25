@@ -98,6 +98,6 @@ public class CustomAdapter extends AppCompatActivity {
 
         }// view
 
-    }// ItemAdapter
+    }
 
 }
