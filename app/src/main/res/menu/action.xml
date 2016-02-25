@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="action-fave"
+        android:id="@+id/action_fave"
+        android:icon="@drawable/burga"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Chat"
+        android:id="@+id/action_chat"
+        android:icon="@drawable/chat"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="trash"
+        android:id="@+id/action_trash"
+        android:icon="@drawable/trash"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="login"
+        android:id="@+id/action_login"
+        android:icon="@drawable/login"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="star"
+        android:id="@+id/action_sta"
+        android:icon="@drawable/sta"
+        app:showAsAction="never"/>
+</menu>

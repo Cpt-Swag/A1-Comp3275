@@ -21,7 +21,7 @@ public class MainMenu extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Get from the list of menu items
         ListView lv = (ListView) findViewById(R.id.menu_list);

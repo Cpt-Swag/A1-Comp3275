@@ -160,7 +160,6 @@ public class Dialogs extends AppCompatActivity{
             mon += 1;
             // Should output selected date
             Toast.makeText(Dialogs.this,dated + "/" + mon + "/" + year,Toast.LENGTH_SHORT).show();
-//            Toast.makeText(Dialogs.this,dayOfMonth + "/" + mon + "/" + year,Toast.LENGTH_SHORT).show();
         } //onDateSet
     }; // Listener
 

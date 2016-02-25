@@ -14,28 +14,3 @@ import android.widget.TextView;
  */
 
 
-public class ItemAdapter extends ArrayAdapter<String> {
-
-    public ItemAdapter(Context context, String [] items){
-        super (context, 0, items);
-    } //constructor
-    @Override
-    public View getView(int position, View v, ViewGroup p){
-
-        v = LayoutInflater.from(getContext()).inflate(R.layout.item, p);
-        String item = getItem(position);
-        String [] itemPrices = getContext().getResources()
-                .getStringArray(R.array.itemS_prices);
-        TypedArray itemImages = getContext().getResources()
-                .obtainTypedArray(R.array.items_images);
-        ((TextView)v.findViewById(R.id.txt_name))
-                .setText(item);
-        ((TextView)v.findViewById(R.id.txt_price))
-                .setText(itemPrices[position]);
-        ((ImageView)v.findViewById(R.id.img_icon))
-                .setImageResource(itemImages.getResourceId(position, 0));
-        return v;
-
-    }
-
-}
