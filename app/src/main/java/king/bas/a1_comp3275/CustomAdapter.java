@@ -71,11 +71,12 @@ public class CustomAdapter extends AppCompatActivity {
         } //constructor
 
         @Override
-        public View getView(final int position, View v, ViewGroup p){
-            v = LayoutInflater.from(getContext()).inflate(R.layout.item, p);
+        public View getView(int position, View v, ViewGroup p){
+            v = LayoutInflater.from(getContext()).inflate(R.layout.item, null);
             String item = getItem(position);
             String [] itemPrices = getContext().getResources().getStringArray(R.array.itemS_prices);
             TypedArray itemImages = getContext().getResources().obtainTypedArray(R.array.items_images);
+            /*
             final String [] itemDesc = getContext().getResources().getStringArray(R.array.items_description);
 
             ((Button) v.findViewById(R.id.btn_deets))
@@ -85,7 +86,7 @@ public class CustomAdapter extends AppCompatActivity {
                             Toast.makeText(CustomAdapter.this, itemDesc[position], Toast.LENGTH_SHORT).show();
                         }
                     });
-
+*/
             ((TextView)v.findViewById(R.id.txt_name))
                     .setText(item);
 
