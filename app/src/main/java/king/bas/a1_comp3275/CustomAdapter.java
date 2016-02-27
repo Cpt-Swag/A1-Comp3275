@@ -35,33 +35,33 @@ public class CustomAdapter extends AppCompatActivity {
         final String [] items = getResources().getStringArray(R.array.items_available);
         ArrayAdapter adapter = new ItemAdapter(this, items);
         lv.setAdapter(adapter);
+//
+//        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                switch (position) {
+//                    case 0:
+//                        // Toast item clicked
+//                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case 1:
+////                        Toast item clicked
+//                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case 2:
+//                        // Toast item clicked
+//                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case 3:
+////                        Toast item clicked
+//                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
+//                        break;
+//
+//                }//switch
+//
+//            }// onClick
+//        }); //clickListner
 
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        // Toast item clicked
-                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
-                        break;
-                    case 1:
-//                        Toast item clicked
-                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
-                        break;
-                    case 2:
-                        // Toast item clicked
-                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
-                        break;
-                    case 3:
-//                        Toast item clicked
-                        Toast.makeText(CustomAdapter.this, "I like " + items[position], Toast.LENGTH_SHORT).show();
-                        break;
-
-                }//switch
-
-            }// onClick
-        }); //clickListner
-
-    }
+    }// onCreate
 
 }
