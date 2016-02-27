@@ -60,9 +60,9 @@
 
 <!--array for prices-->
     <string-array name="itemS_prices">
-        <item>$5,459</item>
-        <item>$6,00</item>
-        <item>$5,459..00</item>
+        <item>$5,459.00</item>
+        <item>$6,000.00</item>
+        <item>$5,459.00</item>
         <item>$7,501.00</item>
     </string-array>
 
