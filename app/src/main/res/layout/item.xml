@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <ImageView
         android:layout_width="100dp"
@@ -13,9 +14,9 @@
 <!--for descriptions-->
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="189dp"
         android:layout_marginLeft="5dp"
-        android:layout_height="wrap_content">
+        android:layout_height="100dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,5 +32,12 @@
             android:layout_marginTop="5dp"/>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:text="Details"
+        android:id="@+id/btn_deets"
+        android:layout_weight="0.62" />
 
 </LinearLayout>
