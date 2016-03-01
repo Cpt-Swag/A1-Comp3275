@@ -6,13 +6,13 @@ Assignment One for COMP3275 COMP3275 Assignment 1
 
 Description The first assignment is designed to provide students with an opportunity to practice the development of specific user interface features that are made available within the Android system. The tasks are designed to be specific, and there is little need to go beyond the standard Android documentation, text book and sample code provided during the class. The assignment also serves as a measure of some of the task that students should be familiar with especially when preparing for the lab exam and the final exam. While there are some components not fully covered in the class, the implementation is straight forward and will provide a good opportunity to develop the student’s programming in Java and in the Android ecosystem. A Sample application will be provided with the description to give students a reference point of how the features should work and be implemented.
 
-Tasks Build an application to demo the following functionality: 1. UI Components 2. Layouts 3. Dialogs 4. Toasts 5. Snackbars 6. Activities 7. Adapters 8. ActionBar 9. Menus 10. Menu/Detail Layouts
+Tasks Build an application to demo the following functionality: 1. UI Components 2. Layouts 3. Dialogs 4. Toasts 5. Snackbars 6. Activities 7. Adapters 8. ActionBar 9. Menus 10. Menu/Detail Layouts.
 
 The application will provide a list to select the implemented functionality. A proposal of the list is demonstrated in figure 1. Within each of the functionality listed, you are expected to complete a set of subtasks related to the specific tasks. The following sections will provide further details on what is required for each section:
 
 UI Components Implement a form that will look similar to the screenshot provided. The data submitted in section A will appear in section B when the save button is pressed.
 
-Layouts Implement the design illustrated above using only Linear Layouts and Buttons
+Layouts Implement the design illustrated above using only Linear Layouts and Buttons.
 
 Toasts and Snack Bars Implement Code that will demonstrate the four items in the list: Toast Short Will display a message using the Toast.LENGTH_SHORT Toast Long Will display a message using the Toast.LENGTH_LONG SnackBar Demonstrates the display of a message using the snack bar SnackBar Action Demonstrates the snack bar with a message but also a button that performs an additional task
 
