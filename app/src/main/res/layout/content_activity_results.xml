@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="king.bas.a1_comp3275.ActivityResults"
+    tools:context="bas.king.comp3275_a1.ActivityResults"
     tools:showIn="@layout/activity_activity_results">
 
     <TextView
@@ -82,9 +82,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SEND"
+        android:text="Send to Activity  Bundles"
         android:id="@+id/btn_send"
-        android:layout_alignBottom="@+id/txt_ok"
-        android:layout_toEndOf="@+id/txt_ok"
-        android:onClick="Send" />
+        android:onClick="Send"
+        android:layout_below="@+id/txt_ok"
+        android:layout_toStartOf="@+id/txt_passr"
+        android:layout_alignEnd="@+id/btn_load" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load from Activity Bundles"
+        android:id="@+id/btn_load"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="41dp"
+        android:onClick="Load" />
 </RelativeLayout>

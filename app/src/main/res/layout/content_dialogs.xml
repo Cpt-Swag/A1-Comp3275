@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="king.bas.a1_comp3275.Dialogs"
+    tools:context="bas.king.comp3275_a1.Dialogs"
     tools:showIn="@layout/activity_dialogs">
 
     <ListView

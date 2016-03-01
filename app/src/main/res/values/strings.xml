@@ -1,16 +1,7 @@
 <resources>
-    <string name="app_name">A1-Comp3275</string>
+    <string name="app_name">COMP3275-A1</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_uicomponents">UI Components</string>
-    <string name="title_activity_layouts">Layouts</string>
-    <string name="title_activity_dialogs">Dialogs</string>
-    <string name="title_activity_toastn_snackbar">Toasts and Snackbars</string>
-    <string name="title_activity_activity_bundles">Activity Bundles</string>
-    <string name="title_activity_activity_results">Activity for Results</string>
-    <string name="title_activity_custom_adapter">Custom Adapters</string>
-    <string name="title_activity_fragment">Fragments</string>
-    <string name="title_activity_action_bar_and_menu">ActionBar And Menu</string>
-    <string name="title_activity_master_detail_layout">Master Detail Layout</string>
+
 
     <!--//Menu items that should test required functionality-->
     <string-array name="menu_funcs">
@@ -44,10 +35,10 @@
 
     <!--// array for images-->
     <string-array name="items_images">
-        <item>drawable-nodpi/laptop_icon</item>
-        <item>/drawable-nodpi/ipad_icon</item>
-        <item>/drawable-nodpi/ipad_icon</item>
-        <item>/drawable-nodpi/television_icon</item>
+        <item>@drawable/laptop_icon</item>
+        <item>@drawable/iphone_icon</item>
+        <item>@drawable/ipad_icon</item>
+        <item>@drawable/television_icon</item>
     </string-array>
 
     <!--// array for actual items-->
@@ -58,7 +49,7 @@
         <item>LCD Television</item>
     </string-array>
 
-<!--array for prices-->
+    <!--array for prices-->
     <string-array name="itemS_prices">
         <item>$5,459.00</item>
         <item>$6,000.00</item>
@@ -73,5 +64,13 @@
         <item>A Brand new iPad</item>
         <item>A Samsung Flat Smart TV</item>
     </string-array>
+    <string name="title_activity_action_bar_and_menu">ActionBarAndMenu</string>
+    <string name="title_activity_activity_bundles">ActivityBundles</string>
+    <string name="title_activity_activity_results">ActivityResults</string>
+    <string name="title_activity_custom_adapter">CustomAdapter</string>
+    <string name="title_activity_dialogs">Dialogs</string>
+    <string name="title_activity_layouts">Layouts</string>
+    <string name="title_activity_toastn_snackbar">ToastnSnackbar</string>
+    <string name="title_activity_uicomponents">UIComponents</string>
 
 </resources>

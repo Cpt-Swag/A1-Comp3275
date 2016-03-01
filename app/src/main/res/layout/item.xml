@@ -11,7 +11,7 @@
         android:layout_height="100dp"
         android:id="@+id/img_icon" />
 
-<!--for descriptions-->
+    <!--for descriptions-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="189dp"
