@@ -63,5 +63,10 @@ public class CustomAdapter extends AppCompatActivity {
 //        }); //clickListner
 
     }// onCreate
+//    public void viewDeets(View view){
+//        final String [] itemDesc = getContext().getResources().getStringArray(R.array.items_description);
+//        Toast.makeText(ItemAdapter.this, itemDesc[position], Toast.LENGTH_SHORT).show();
+//
+//    }// viewCart
 
 }

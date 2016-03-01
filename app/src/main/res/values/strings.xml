@@ -44,10 +44,10 @@
 
     <!--// array for images-->
     <string-array name="items_images">
-        <item>@drawable/laptop_icon</item>
-        <item>@drawable/iphone_icon</item>
-        <item>@drawable/ipad_icon</item>
-        <item>@drawable/television_icon</item>
+        <item>drawable-nodpi/laptop_icon</item>
+        <item>/drawable-nodpi/ipad_icon</item>
+        <item>/drawable-nodpi/ipad_icon</item>
+        <item>/drawable-nodpi/television_icon</item>
     </string-array>
 
     <!--// array for actual items-->

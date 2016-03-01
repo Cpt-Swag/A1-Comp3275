@@ -1,5 +1,6 @@
 package king.bas.a1_comp3275;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -25,34 +26,30 @@ public class ItemAdapter extends ArrayAdapter<String> {
         v = LayoutInflater.from(getContext()).inflate(R.layout.item, null);
         String item = getItem(position);
         String [] itemPrices = getContext().getResources().getStringArray(R.array.itemS_prices);
-//        TypedArray itemImages = getContext().getResources().obtainTypedArray(R.array.items_images);
-
-//            final String [] itemDesc = getContext().getResources().getStringArray(R.array.items_description);
+        TypedArray itemImages = getContext().getResources().obtainTypedArray(R.array.items_images);
 //
-//            ((Button) v.findViewById(R.id.btn_deets))
-//                        .setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            Toast.makeText(ItemAdapter.this, itemDesc[position], Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
+//            final String [] itemDesc = getContext().getResources().getStringArray(R.array.items_description);
+//            final int pos = position;
 
+//        Button button= (Button) v.findViewById(R.id.btn_deets);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                viewDeets(v,pos);
+//            }
+//        });
         ((TextView)v.findViewById(R.id.txt_name))
                 .setText(item);
 
         ((TextView)v.findViewById(R.id.txt_price))
                 .setText(itemPrices[position]);
 
-//        ((ImageView)v.findViewById(R.id.img_icon))
-//                    .setImageResource(itemImages.getResourceId(position, 0));
+        ((ImageView)v.findViewById(R.id.img_icon))
+                    .setImageResource(itemImages.getResourceId(position, 0));
         return v;
 
     }// view
 
-//    public void viewDeets(View view){
-//        final String [] itemDesc = getContext().getResources().getStringArray(R.array.items_description);
-//        Toast.makeText(ItemAdapter.this, itemDesc[position], Toast.LENGTH_SHORT).show();
-//    }// viewCart
 
 }// class
 
